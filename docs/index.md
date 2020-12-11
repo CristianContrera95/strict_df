@@ -14,7 +14,7 @@ This is a library that provides utils to handle Pandas DataFrames in a "strict" 
 Installing **strictdf** is done in the usual ways. The simplest way is with pip:
 
 ``` bash
-pip install <TODO>
+pip install git+git://github.com/CristianContrera95/strict_df.git
 ```
 
 - Note:  
