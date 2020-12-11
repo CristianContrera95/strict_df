@@ -18,7 +18,7 @@ def load_credit_data():
     local_file = Path.home() / '.strict_df' / 'datasets' / 'credit_date.csv'
 
     if local_file.exists():
-        return  pd.read_csv(str(local_file))
+        return pd.read_csv(str(local_file))
     else:
         os.makedirs(local_file.parent)
 

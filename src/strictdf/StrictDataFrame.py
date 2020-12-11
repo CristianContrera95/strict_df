@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 from copy import copy
 from typing import Union, List
-from utils.dtypes import str_check_bool, str_check_int, str_check_float
+from .utils.dtypes import str_check_bool, str_check_int, str_check_float
 
 
 class StrictDataFrame():
@@ -107,8 +107,7 @@ class StrictDataFrame():
         unexpected_mask = np.ones(len(df), dtype=bool)
         for col in columns:
             _mask = df[col].map(lambda x: bool(str_check_bool(str(x))) or
-                                          bool(str_check_int(str(x))) or
-                                          bool(str_check_float(str(x)))
+                                bool(str_check_int(str(x))) or bool(str_check_float(str(x)))
                                 ).values
             if sum(~_mask) / len(_mask) * 100 < (100 - self.min_percentage):
                 # Columns with more than '1-min_percentage' values

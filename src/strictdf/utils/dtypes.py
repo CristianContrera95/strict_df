@@ -17,13 +17,13 @@ __str_check_functions = {
 }
 
 
-def str_check_bool(string : str = ''):
+def str_check_bool(string: str = ''):
     return __str_check_functions['bool'].match(string.lower())
 
 
-def str_check_int(string : str = ''):
+def str_check_int(string: str = ''):
     return __str_check_functions['int'].match(string)
 
 
-def str_check_float(string : str = ''):
+def str_check_float(string: str = ''):
     return __str_check_functions['float'].match(string)

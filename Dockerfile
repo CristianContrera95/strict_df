@@ -8,8 +8,8 @@ COPY requirements*.txt ./
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt
 
-COPY strictdf/ .
-COPY scripts/run_test_alpine.sh .
+COPY src/strictdf/ .
+COPY scripts/docker_run_test.sh .
 RUN chmod +x run_test_alpine.sh
 
 CMD ["./run_test_alpine.sh"]

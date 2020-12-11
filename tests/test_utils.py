@@ -1,6 +1,5 @@
 import pytest
-from utils.dtypes import str_check_float, str_check_bool, str_check_int
-from utils.dataset import load_credit_data
+from src.strictdf.utils.dtypes import str_check_float, str_check_bool, str_check_int
 
 
 @pytest.mark.parametrize(
