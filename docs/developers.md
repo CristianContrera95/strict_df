@@ -13,16 +13,9 @@ This is a library that provides utils to handle Pandas DataFrames in a "strict" 
 
 Installing **strictdf** dev mode is done in the usual ways.
 
-#### Pip
-
-Open a shell and run:
-``` bash
-pip install <TODO>[dev]
-```
-
 #### Github
 
-You can downlaod the project from github repository and create a distribution wheel from code.
+You can download the project from github repository and create a distribution wheel from code.
 Open a bash shell in the root of project and run:
 
 ``` bash
@@ -36,7 +29,7 @@ Those commands should create two folders *build* and *dist*
 
 Now can install with pip following:
 ``` bash
-pip install <TODO>[dev]
+pip install dist/strictdf-0.1.0-py3-none-any.whl
 ```
 
 - Note:  

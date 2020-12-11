@@ -25,9 +25,9 @@ For use strictdf, install before:
 - python>=3.9
 - pip
 
-And need a bash console
+***And need a bash console***
 
-- Note:  
+- **Note**:  
     **If you are using windows os, you are starting very very bad**.   
     Anyway *library_create.bat* for windows is provided.  
     But you shouldn't program on that OS
@@ -35,11 +35,19 @@ And need a bash console
 With prerequisites ready you can run:
 
 ``` bash
+pip install git+git://github.com/CristianContrera95/strict_df.git
+```
+
+Or cloning this repository:
+
+``` bash
 chmod +x script/*
 ./script/create_env.sh
 ./library_create.sh
 ```
 
+#### And then you can install strictdf where you want to use it! 
 
-#### And the you can install strictdf where you want to use it! 
-
+``` bash
+pip install dist/strictdf-0.1.0-py3-none-any.whl
+```
