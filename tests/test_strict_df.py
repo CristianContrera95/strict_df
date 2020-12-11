@@ -1,7 +1,7 @@
 import pytest
 import pandas as pd
 import numpy as np
-from strictdf import StrictDataFrame
+from src.strictdf import StrictDataFrame
 
 
 @pytest.mark.parametrize(

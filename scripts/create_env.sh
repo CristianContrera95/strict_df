@@ -1,21 +1,30 @@
 #!/bin/bash
 
-# get dir of current script
-CUR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-# cd to project root
-cd "$CUR_DIR/.."
+source ./scripts/helpers.sh
 
-exit 0
+# Check if pip3 is installed
+pip3 --version > /dev/null 2>&1
 if [[ $? -ne 0 ]]
 then
     printf "\nPlease install pip:\n[ https://pip.pypa.io/en/stable/installing/# ]\n";
     exit 0;
 fi
-pip3 install pipenv;
 
+# Check if pipenv is installed
+pipenv --version > /dev/null 2>&1
+if [[ $? -ne 0 ]]
+then
+    pip3 install pipenv;
+fi
 
+# Check if Pipfile exists
 if [ ! -f "Pipfile" ]; then
-    echo "$FILE does not exist."
+    echo "Pipfile does not exist.";
+fi
+
+# Check if Pipfile.lock exists
+if [ ! -f "Pipfile.lock" ]; then
+    pipenv lock
 fi
 
 pipenv sync --dev;

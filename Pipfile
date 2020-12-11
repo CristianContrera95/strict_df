@@ -6,12 +6,15 @@ name = "pypi"
 [packages]
 pandas = "*"
 numpy = "*"
+requests = "*"
 
 [dev-packages]
 pytest = "*"
-requests = "*"
 coverage = "*"
 pysqlite3 = "*"
+flake8 = "*"
+pipfile-requirements = "*"
+mkdocs = "*"
 
 [requires]
 python_version = "3.9"

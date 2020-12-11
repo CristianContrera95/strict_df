@@ -1,8 +1,11 @@
 #!/bin/bash
+source ./scripts/helpers.sh
 
-# get dir of current script
-CUR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-# cd to project root
-cd "$CUR_DIR/.."
+generate_requirements
 
-python3 setup.py sdist --format=zip
+rm -r build/ > /dev/null 2>&1 &&  rm -r dist/ > /dev/null 2>&1
+
+python setup.py bdist_wheel
+python setup.py clean
+
+remove_requirements
