@@ -10,7 +10,7 @@ This is a library that provides utils to handle Pandas DataFrames in a "strict" 
 
 
 ### Read docs
-Only open a shell in the root of project and run:
+Once cloned this project, only open a shell in the root of project and run:
 ``` bash
 pip install mkdocs
 mkdocs serve
