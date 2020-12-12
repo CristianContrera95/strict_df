@@ -6,6 +6,7 @@ A pd.DataFrame wrapper that provides utilities to handle in a "strict" DataFrame
 
 import pandas as pd
 import numpy as np
+from pyspark.sql import SparkSession
 from copy import copy
 from typing import Union, List
 from .utils.dtypes import str_check_bool, str_check_int, str_check_float
@@ -153,3 +154,7 @@ class StrictDataFrame():
         rows_diff = self.old_df.shape[0] - self.new_df.shape[0]
         text = f"DataFrame having shape '{self.new_df.shape}' ({rows_diff} rows removed from original)"
         return text
+
+    def to_spark(self):
+        spark = SparkSession.builder.getOrCreate()
+        return spark.createDataFrame(self.new_df)
