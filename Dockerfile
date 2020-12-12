@@ -15,7 +15,7 @@ ENV PATH=$SPARK_HOME/bin:$PATH
 ENV PYSPARK_DRIVER_PYTHON=jupyter
 ENV PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 
-RUN apk add openjdk11
+RUN apk add openjdk11 bash
 
 ENV JAVA_HOME=usr/lib/jvm/java-11-openjdk
 ENV PATH=$JAVA_HOME/bin:$PATH
