@@ -12,6 +12,10 @@ This is a library that provides utils to handle Pandas DataFrames in a "strict" 
 ### Read docs
 Once cloned this project, only open a shell in the root of project and run:
 ``` bash
+# clone
+git clone https://github.com/CristianContrera95/strict_df.git
+cd strict_df/
+# build and serve docs
 pip install mkdocs
 mkdocs serve
 ```
@@ -42,9 +46,14 @@ pip install git+git://github.com/CristianContrera95/strict_df.git
 Or cloning this repository:
 
 ``` bash
+# clone
+git clone https://github.com/CristianContrera95/strict_df.git
+cd strict_df/
+# set permission to scripts
 chmod +x script/*
+# create environ and build library
 ./script/create_env.sh
-./library_create.sh
+./script/library_create.sh
 ```
 
 #### And then you can install strictdf where you want to use it! 
