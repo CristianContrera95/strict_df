@@ -24,6 +24,7 @@ And follow the link http://127.0.0.1:8000
 For use strictdf, install before:
 - python>=3.9
 - pip
+- git
 
 ***And need a bash console***
 
