@@ -61,3 +61,5 @@ chmod +x script/*
 ``` bash
 pip install dist/strictdf-0.1.0-py3-none-any.whl
 ```
+---
+##  For more info use the docs!
