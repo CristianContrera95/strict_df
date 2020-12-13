@@ -17,7 +17,7 @@ def load_requirements(fname):
 
 setup(
     name="strictdf",
-    version="0.1.0",
+    version="0.1.1",
 
     install_requires=load_requirements('requirements.txt'),
 
