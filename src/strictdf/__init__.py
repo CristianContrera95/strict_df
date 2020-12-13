@@ -5,3 +5,6 @@ License: MIT
 """
 
 from .StrictDataFrame import StrictDataFrame
+import findspark
+
+findspark.init()
