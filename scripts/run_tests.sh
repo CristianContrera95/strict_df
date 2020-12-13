@@ -4,5 +4,5 @@ source ./scripts/helpers.sh
 
 active_env
 
-coverage run -m pytest -v
-coverage report
+pipenv run coverage run -m pytest -v
+pipenv run coverage report

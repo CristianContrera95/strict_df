@@ -5,6 +5,9 @@ License: MIT
 """
 
 from .StrictDataFrame import StrictDataFrame
-import findspark
+from .utils.helpers import is_spark
 
-findspark.init()
+if is_spark():
+    import findspark
+
+    findspark.init()
