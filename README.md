@@ -50,7 +50,7 @@ Or cloning this repository:
 git clone https://github.com/CristianContrera95/strict_df.git
 cd strict_df/
 # set permission to scripts
-chmod +x script/*
+chmod +x scripts/*
 # create environ and build library
 ./script/create_env.sh
 ./script/library_create.sh
