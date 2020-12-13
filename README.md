@@ -29,6 +29,7 @@ For use strictdf, install before:
 - python>=3.9
 - pip
 - git
+- SPARK installed (if you want to use `sdf.to_spark()`)
 
 ***And need a bash console***
 
