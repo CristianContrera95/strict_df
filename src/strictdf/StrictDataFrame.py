@@ -9,10 +9,7 @@ import numpy as np
 from copy import copy
 from typing import Union, List
 from .utils.dtypes import str_check_bool, str_check_int, str_check_float
-from .utils.helpers import is_spark
-
-if is_spark():
-    from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession
 
 
 class StrictDataFrame():
@@ -159,8 +156,8 @@ class StrictDataFrame():
         return text
 
     def to_spark(self):
-        if is_spark():
+        try:
             spark = SparkSession.builder.getOrCreate()
             return spark.createDataFrame(self.new_df)
-        else:
+        except:
             'Spark not installed.'

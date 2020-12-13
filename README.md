@@ -29,11 +29,15 @@ For use strictdf, install before:
 - python>=3.9
 - pip
 - git
-- SPARK installed (if you want to use `sdf.to_spark()`)
+- SPARK (if you want to use `sdf.to_spark()`)
 
 ***And need a bash console***
+  
+*the file `scripts/install_spark.sh` can help you in the spark installation*
 
-- **Note**:  
+
+
+>- **Note**:  
     **If you are using windows os, you are starting very very bad**.   
     Anyway *library_create.bat* for windows is provided.  
     But you shouldn't program on that OS
@@ -41,7 +45,7 @@ For use strictdf, install before:
 With prerequisites ready you can run:
 
 ``` bash
-pip install git+git://github.com/CristianContrera95/strict_df.git
+    pip install git+git://github.com/CristianContrera95/strict_df.git
 ```
 
 Or cloning this repository:

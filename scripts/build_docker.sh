@@ -2,7 +2,7 @@
 
 source ./scripts/helpers.sh
 
-active_env
+# active_env
 
 generate_requirements
 

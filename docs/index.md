@@ -17,9 +17,11 @@ Installing **strictdf** is done in the usual ways. The simplest way is with pip:
 pip install git+git://github.com/CristianContrera95/strict_df.git
 ```
 
-- Note:  
+> - Note:  
     It is **very** important to install **strictdf** on the *correct* version of
     Python. StrictDataFrame requires *Python>=3.9*.
+  
+>     If **spark** is installed already, strictdf will use it on some methods.
 
 ### Using stricdf
 To start using **stricdf**, open an jupyter or ipython sheel and run:
@@ -94,6 +96,8 @@ StrictDataFrame is a pd.DataFrame wrapper that provides utilities to handle in a
 ##### Methods
 
 - **report()** : Prints current df's shape and diff with original df
+
+- **to_spark()** : Convert new_df attribute in sparkDataFrame and return it
 
 
 ### Utils

@@ -32,11 +32,11 @@ Now can install with pip following:
 pip install dist/strictdf-0.1.0-py3-none-any.whl
 ```
 
-- Note:  
+> - Note:  
     It is **very** important to install **strictdf** on the *correct* version of
     Python. StrictDataFrame requires *Python>=3.9*.
 
-- Note:  
+> - Note:  
     Install **strictdf** on dev mode allow run test and check coverage.
 
 
@@ -69,6 +69,6 @@ create_env.sh
 run_test.sh
 ```
 
-- Note:
+> - Note:
     To perform this, you need install **python3.9** with [pyenv](https://github.com/pyenv/pyenv)
     and pip for that python version.
