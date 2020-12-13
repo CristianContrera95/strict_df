@@ -8,7 +8,8 @@ COPY requirements*.txt ./
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt
 
-COPY src/strictdf/ .
+COPY src/ src
+COPY tests/ tests
 COPY scripts/docker_run_test.sh .
 RUN chmod +x docker_run_test.sh
 
