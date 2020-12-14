@@ -99,6 +99,9 @@ StrictDataFrame is a pd.DataFrame wrapper that provides utilities to handle in a
 
 - **to_spark()** : Convert new_df attribute in sparkDataFrame and return it
 
+> - Note:  
+    If **spark** is not installed `to_report()` does nothing.
+
 
 ### Utils
 The module provides common functions used in several code parts

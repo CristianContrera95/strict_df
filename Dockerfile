@@ -5,6 +5,7 @@ MAINTAINER CRISTIAN_CONTRERA <cristiancontrera95@gmail.com>
 RUN apk update && apk --no-cache add musl-dev linux-headers g++
 
 ## Install spark
+# If you don't need spark, you can comment the following lines
 RUN wget https://apache.dattatec.com/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.2.tgz
 RUN tar -xzf spark-3.0.1-bin-hadoop3.2.tgz
 RUN mv spark-3.0.1-bin-hadoop3.2 /opt/spark-3.0.1
@@ -20,6 +21,8 @@ RUN apk add openjdk11 bash
 ENV JAVA_HOME=usr/lib/jvm/java-11-openjdk
 ENV PATH=$JAVA_HOME/bin:$PATH
 ENV PYSPARK_PYTHON='python3'
+## End spark installation
+
 
 # Install strictdf and their requirements
 WORKDIR /app

@@ -29,7 +29,7 @@ Those commands should create two folders *build* and *dist*
 
 Now can install with pip following:
 ``` bash
-pip install dist/strictdf-0.1.0-py3-none-any.whl
+pip install dist/strictdf-0.1.0-py3-none-any.whl[dev]
 ```
 
 > - Note:  
@@ -52,6 +52,10 @@ Using Dockerfile provided, You can build docker image, it's very easy, only open
 chmod +x script/build_docker.sh
 ./script/build_docker.sh
 ```
+> - Note:
+>   If you don't need **spark**, you can comment the lines indicated in the **Dockerfile**
+
+
 And when this ends:
 
 ``` bash
