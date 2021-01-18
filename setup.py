@@ -24,5 +24,5 @@ setup(
     tests_require=["pytest"],
     test_suite="tests",
     extras_require={'dev': load_requirements('requirements-dev.txt')},
-    python_requires=">=3.9",
+    python_requires=">=3.8",
 )
