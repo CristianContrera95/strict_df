@@ -15,7 +15,7 @@ pytest = "*"
 coverage = "*"
 pysqlite3 = "*"
 flake8 = "*"
-pipfile-requirements = "*"
+pipfile2req = "*"
 mkdocs = "*"
 
 [requires]

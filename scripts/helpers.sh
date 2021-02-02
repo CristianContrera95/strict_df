@@ -10,6 +10,7 @@ active_env () {
 }
 
 generate_requirements() {
+    pipenv install && pipend install --dev;
     pipenv run pipfile2req > requirements.txt;
     pipenv run pipfile2req --dev > requirements-dev.txt;
 }
