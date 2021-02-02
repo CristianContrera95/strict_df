@@ -19,8 +19,8 @@ You can download the project from github repository and create a distribution wh
 Open a bash shell in the root of project and run:
 
 ``` bash
-chmod +x script/library_create.sh
-./script/library_create.sh
+chmod +x scripts/library_create.sh
+./scripts/library_create.sh
 ```
 
 - **if you are using windows os, you are starting very very bad.** Anyway `library_create.bat` for windows is provided.
@@ -49,8 +49,8 @@ To run test, You must download **strictdf** from github (previous section) and f
 Using Dockerfile provided, You can build docker image, it's very easy, only open a bash shell and run:
 
 ``` bash
-chmod +x script/build_docker.sh
-./script/build_docker.sh
+chmod +x scripts/build_docker.sh
+./scripts/build_docker.sh
 ```
 > - Note:
 >   If you don't need **spark**, you can comment the lines indicated in the **Dockerfile**
@@ -66,8 +66,8 @@ docker run -it strict_df_test
 
 With a shell in the root of the project, run:
 ``` bash
-chmod +x script/create_env.sh
-chmod +x script/run_test.sh
+chmod +x scripts/create_env.sh
+chmod +x scripts/run_test.sh
 
 create_env.sh
 run_test.sh
