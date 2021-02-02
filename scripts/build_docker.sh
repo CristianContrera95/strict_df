@@ -4,7 +4,9 @@ source ./scripts/helpers.sh
 
 # active_env
 
-generate_requirements
+if [ ! -f "requirements.txt" ]; then
+  generate_requirements
+fi
 
 docker build -t strict_df_test .
 
